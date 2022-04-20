@@ -129,7 +129,7 @@ ul{
 
 .card{
     border-radius: 10px;
-    max-height: 300px;
+    max-height: 540px;
     margin: 1rem;
     box-shadow: 0px 8px 24px rgb(149 157 165 / 20%);
     
@@ -149,7 +149,8 @@ ul{
     font-weight: lighter;
     font-size:medium;
     text-align: start;
-    padding-left: 2rem;
+    padding:0 2rem;
+    /* margin: 1rem 0; */
 }
 
 .gallery-button-area{
