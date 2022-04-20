@@ -1,0 +1,375 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Inter bold', sans-serif;
+  
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.navbar .container{
+    height: 76px;
+
+    display: flex;
+    align-items: center;
+    /* align-content: center; */
+    justify-content: space-around;
+
+}
+
+.navbar .logo{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar-button button{
+
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    background: black;
+    color: white;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    padding: 4%;
+    /* background: darkcyan; */
+}
+
+.left-comp{
+    padding: 5% 2%;
+    text-align: left;
+    width: 50%;
+    /* background: yellow; */
+}
+
+.right-comp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    /* background: red; */
+    /* padding: 2%; */
+}
+
+.heading{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.left-comp h2{
+    font-weight: lighter;
+    margin: 1rem 0;
+}
+
+.left-comp button{
+    background: black;
+    color: white;
+    padding: 13px 65px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.header-img{
+    max-width: 250px;
+    max-height: 300px;
+}
+
+.popular-template{
+    font-size: 30px;
+    padding-left:13.5rem ;
+    margin: 2rem 0;
+}
+
+.gallery{
+    background: rgb(255, 255, 255);
+    height: 350px;
+    width: 100%;
+}
+.card img{
+    max-width: 250px;
+    padding: 1rem;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    border-radius: 10px;
+    max-height: 300px;
+    margin: 1rem;
+    box-shadow: 0px 8px 24px rgb(149 157 165 / 20%);
+    
+    background: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    max-width: 318px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2{
+    font-weight: normal;
+}
+
+.card h3{
+    font-weight: lighter;
+    font-size:medium;
+    text-align: start;
+    padding-left: 2rem;
+}
+
+.gallery-button-area{
+    /* background: yellow; */
+    padding-left:13rem ;
+
+}
+
+.gallery-button{
+    background: black;
+    color: #ffffff;
+    padding:1rem 4rem;
+    border-radius: 0.7rem;
+    border: none;    
+}
+
+.empty{
+    height: 14rem;
+    width: 100%;
+    /* background: yellow; */
+}
+
+.what{
+    padding: 1rem 0;
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+.what h1{
+    font-size: 3rem;
+}
+
+.what h3{
+    padding: 0 22rem;
+    font-weight: lighter;
+}
+.gallery-photo{
+    justify-content:center;
+    display: flex;
+    /* background: red; */
+    max-height:500px;
+}
+.photo img{
+    max-width: 18rem;
+    max-height: 20rem;
+    padding: 1rem;
+}
+.photo{
+    padding: 2rem;
+    max-width: 24rem;
+    max-height: 800px;
+    text-align: start;
+    /* background: yellow; */
+}
+
+.photo h3{
+    font-weight: lighter;
+}
+
+.about{
+    text-align: center;
+}
+.about h3{
+    font-weight: lighter;
+    padding: 1rem 22rem;
+}
+
+.certified{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.certified .notion-logo img{
+    max-width: 8rem;
+}
+
+.certified .notion-text h3{
+    font-size: 14px;
+    font-weight: lighter;
+    color: #666666;
+}
+.teams{
+    text-align: center;
+    color:#666666;
+}
+
+.teams .team-photo img{
+    padding: 3rem 0;
+    max-width: 50%;
+}
+
+.testimonials h1{
+    text-align: center;
+}
+
+.testimonial-review{
+    display: flex;
+    justify-content: center;
+}
+.test-card{
+    /* background: red; */
+    padding: 2rem;
+    max-width: 25rem;
+}
+.test-card h2{
+    font-weight: lighter;
+}
+
+.test-card h3{
+    padding-top: 3rem;
+    font-weight: bold;
+
+}
+
+.test-card h4{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color:#666666 ;
+}
+
+.get-in-touch{
+    display: flex;
+}
+
+.left-side{
+    padding: 2rem 10rem;
+    width: 50%;
+    /* background: red; */
+}
+.left-side h2{
+    font-weight: lighter;
+}
+
+.left-side img{
+    max-width: 90%;
+}
+
+.right-side{
+    border-radius: 5px;
+    width: 50%;
+    /* background: yellow; */
+}
+
+.form-style{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    max-width: 80%;
+    box-shadow: 0px 8px 24px rgb(149 157 165 / 20%);
+    border-radius: 10px;
+    /* background: rebeccapurple; */
+}
+.input{
+    padding: 1rem;
+    margin: 15px 0;
+    border:solid 1px rgb(211, 208, 208);
+    border-radius: 5px;
+    box-shadow:0px 8px 24px rgb(149 157 165 / 20%) ;
+}
+
+.send-button{
+    margin-top:1rem ;
+    color: white;
+    background: black;
+    padding: 10px 20px;
+    max-width: 20%;
+    border-radius: 10px;
+    border: 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    /* background: darkblue; */
+}
+
+.part1{
+    /* background: yellow; */
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+}
+.part2{
+    /* background: rgb(0, 255, 85); */
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+
+}
+.part3{
+    /* background: rgb(85, 0, 255); */
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    
+
+}
+
+
+
+.part1 img {
+    max-width: 4rem;
+}
+.part1 h3{
+    margin-top: 60px;
+    font-weight: lighter;
+    color: #666666;
+}
+
+.part2 a{
+    text-decoration: none;
+    color: #666666;
+}
+.part3 a{
+    text-decoration: none;
+    color: #666666;
+}
