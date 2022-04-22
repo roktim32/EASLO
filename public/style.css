@@ -75,12 +75,23 @@ ul{
 }
 
 .content{
+
     display: flex;
     justify-content: space-evenly;
     padding: 6rem;
-    background: darkcyan;
+    /* background: darkcyan; */
     
 }
+
+@media(max-width:425px){
+    .content{
+        
+        padding: 2rem;
+        flex-direction: column;
+    }
+}
+
+
 
 
 .left-comp{
@@ -89,8 +100,19 @@ ul{
     text-align: left;
     width: 50%;
     flex: 1;
-    background: yellow;
+    /* background: yellow; */
 }
+@media(max-width:425px){
+    .left-comp{
+        /* padding: 2rem; */
+        margin: 0rem;
+        text-align: left;
+        width: 100%;
+        flex: 1;
+        /* background: yellow; */
+    }
+}
+
 
 
 
@@ -100,8 +122,16 @@ ul{
     align-items: center;
     justify-content: center;
     width: 30%;
-    background: red;
+    /* background: red; */
     /* padding: 2%; */
+}
+@media(max-width:425px){
+    .right-comp{
+        font-size: 2.9rem;
+        font-weight: lighter;
+        margin: 1rem 0;
+        width: 100%;
+    }
 }
 
 .heading{
@@ -116,6 +146,15 @@ ul{
     font-weight: lighter;
     margin: 1rem 0;
 }
+@media(max-width:425px){
+    .left-comp h2{
+        font-size: 2.9rem;
+        font-weight: lighter;
+        margin: 1rem 0;
+    }
+}
+
+
 
 .left-comp button{
     background: black;
@@ -123,6 +162,20 @@ ul{
     padding: 1.3rem 6.5rem;
     border: none;
     border-radius: 1.0rem;
+}
+@media(max-width:425px){
+    
+    .left-comp button{
+        width: 100%;
+        height: 6rem;
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        background: black;
+        color: white;
+        padding: 1.3rem 10.5rem;
+        border: none;
+        border-radius: 1.0rem;
+    }
 }
 
 
@@ -142,6 +195,16 @@ ul{
     height: 35.rem;
     width: 100%;
 }
+
+@media (max-width:425px)
+{
+    .gallery{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .card img{
     max-width: 25.0rem;
     padding: 2rem 1rem;
@@ -157,7 +220,7 @@ ul{
     border-radius: 1.0rem;
     /* max-height: 64.0rem; */
 
-    margin: 0.3rem;
+    margin: 2.3rem;
     box-shadow: 0px 8px 24px rgb(149 157 165 / 20%);
     
     /* background: rgb(58, 36, 36); */
@@ -167,6 +230,8 @@ ul{
     display: flex;
     flex-direction: column;
 }
+
+
 
 .card h2{
     padding: 0 2rem;
@@ -183,18 +248,46 @@ ul{
 }
 
 .gallery-button-area{
+    align-self:center;
+    margin-right: 98rem;
     /* background: yellow; */
-    padding-left:13rem ;
+    padding:0rem 12rem ;
 
 }
 
+@media (max-width:425px)
+{
+    .gallery-button-area{
+        width: 100%;
+        align-self:center;
+        /* background: yellow; */
+        padding: 0rem 7rem;
+        
+    
+    }
+}
+
 .gallery-button{
-    font-size: 1.5rem;
+    width: 100%;
+    font-size: 1.8rem;
     background: black;
     color: #ffffff;
-    padding:1.2rem 3rem;
+    padding:1.4rem 2rem;
     border-radius: 0.7rem;
     border: none;    
+}
+
+@media (max-width:425px)
+{
+    .gallery-button{
+        width: 100%;
+        font-size: 1.8rem;
+        background: black;
+        color: #ffffff;
+        padding:2.5rem 8rem;
+        border-radius: 1.3rem;
+        border: none;    
+    }
 }
 
 .empty{
@@ -218,18 +311,30 @@ ul{
     font-weight: 400;
     font-size: 1.9rem;
 }
+
+@media(max-width:425px)
+{
+    .what h3{
+        padding: 0.3rem 8rem;
+        font-weight: 400;
+        font-size: 2.9rem;
+    }
+}
+
 .gallery-photo{
     justify-content:space-evenly;
     display: flex;
     flex-wrap: wrap;
     /* background: red; */
     max-height:50.0rem;
+    width: 100%;
 }
 .photo img{
     max-width: 100%;
     max-height: 100%;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
+
 .photo{
     padding: 2rem;
     max-width: 34rem;
@@ -237,6 +342,8 @@ ul{
     text-align: start;
     /* background: yellow; */
 }
+
+
 .photo h1{
     font-size: 2.6rem;
 }
@@ -245,19 +352,69 @@ ul{
     font-weight: lighter;
     color: #666666;
 }
+@media (max-width:425px)
+{
+    .photo img{
+        max-width: 100%;
+        max-height: 100%;
+        padding: 2rem;
+    }
+    .photo{
+        padding: 0rem 4rem;
+        padding-top: 1rem;
+        /* padding: 4rem; */
+        max-width: 100%;
+        max-height: 80.0rem;
+        text-align: start;
+        /* background: yellow; */
+    } 
+    .photo h1{
+        font-size: 3.6rem;
+        padding: 0rem 3rem;
+    }
+    .photo h3{
+        font-size: 2.4rem;
+        font-weight: lighter;
+        color: #666666;
+        padding: 0rem 3rem;
+
+    }
+}
 
 .about{
     text-align: center;
 }
 
+
 .about h1{
     font-size: 4.6rem;
 }
+
 .about h3{
     font-size: 2rem;
     font-weight: lighter;
     padding: 1rem 32rem;
 }
+
+@media (max-width:425px){
+    .about{
+        margin: 2rem 3rem;
+        padding: 5rem 1rem;
+        text-align: center;
+        margin-top: 150rem;
+    }
+    .about h1{
+        font-size: 4.6rem;
+        margin-top: 4rem;
+    }
+    .about h3{
+        font-size: 2.4rem;
+        font-weight: lighter;
+        padding: 0rem 2.4rem;
+
+    }
+}
+
 
 .certified{
     padding: 4rem;
@@ -277,15 +434,53 @@ ul{
     font-weight: lighter;
     color: #666666;
 }
+
+@media(max-width:425px)
+{
+    .certified{
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .certified .notion-logo img{
+        height: 21rem;
+        max-width: 100%;
+    }
+    
+    .certified .notion-text h3{
+        font-size: 2rem;
+        font-weight: lighter;
+        color: #666666;
+        padding: 0rem 8rem;
+    }
+}
 .teams{
     text-align: center;
     color:#666666;
 }
-
+.team-head{
+    font-size: 1.2rem;
+}
 .teams .team-photo img{
     padding: 3rem 0;
     max-width: 50%;
 }
+@media(max-width:425px){
+    .team-head{
+        padding: 0rem 8rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    .teams .team-photo img{
+        padding: 3rem 8rem;
+        max-width: 100%;
+    }
+}
+
 
 .testimonials h1{
     font-size: 3rem;
@@ -295,6 +490,15 @@ ul{
 .testimonial-review{
     display: flex;
     justify-content: center;
+}
+
+
+@media(max-width:425px){
+    .testimonial-review{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 .test-card{
     /* background: red; */
@@ -322,31 +526,91 @@ font-size: 2rem;
     font-weight: lighter;
     color:#666666 ;
 }
+@media (max-width:425px)
+{
+    .test-card{
+        /* background: red; */
+        padding: 2rem 8rem;
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+    .test-card h1{
+    font-size: 3rem;
+    }
+    
+    .test-card h2{
+        font-size: 3rem;
+        font-weight: lighter;
+    }
+    
+    .test-card h3{
+        font-size: 3rem;
+        padding-top: 3rem;
+        font-weight: bold;
+    
+    }
+    
+    .test-card h4{
+        font-size: 3rem;
+        font-weight: lighter;
+        color:#666666 ;
+    }
+}
 
 .get-in-touch{
     display: flex;
+    flex-direction: row;
+}
+@media(max-width:425px)
+{
+    .get-in-touch{
+        flex-direction: column;
+    }
 }
 
 .left-side{
-    padding: 2rem 15rem;
-    width: 50%;
+    flex:1;
+    /* padding: 2rem 15rem; */
+    /* width: 50%; */
     /* background: red; */
 }
 .left-side h1{
     font-size: 3rem;
+    padding: 0rem 15rem;
 }
+
 .left-side h2{
     font-size: 2rem;
-    font-weight: lighter;
+    font-weight: 300;
+    padding: 0rem 15rem;
 }
 
 .left-side img{
-    max-width: 90%;
+    max-width: 100%;
+}
+
+@media(max-width:425px){
+    .left-side h1{
+        font-size: 3.5rem;
+        padding: 2rem 5rem;
+    }
+
+    .left-side h2{
+        font-size: 3rem;
+        font-weight: lighter;
+        padding: 0rem 5rem;
+
+    }
+    .left-side img{
+        max-width: 100%;
+        padding: 5rem;
+    }
 }
 
 .right-side{
+    flex: 1;
     border-radius: 0.5rem;
-    width: 50%;
+    /* width: 50%; */
     /* background: yellow; */
 }
 
@@ -361,6 +625,16 @@ font-size: 2rem;
     box-shadow: 0px 8px 24px rgb(149 157 165 / 20%);
     border-radius: 1.0rem;
     /* background: rebeccapurple; */
+}
+
+@media(max-width:425px)
+{
+    .form{
+    margin: 6rem;
+    max-width: 100%;
+    box-shadow: 0px 8px 24px rgb(149 157 165 / 20%);
+    border-radius: 1rem;
+    }
 }
 
 .form-tstyle{
@@ -391,14 +665,18 @@ font-size: 2rem;
     display: flex;
     justify-content: space-evenly;
     /* background: darkblue; */
+    padding: 0rem 10rem;
 }
+
+
 
 .part1{
     /* flex: 3; */
+    width: 100%;
     /* background: yellow; */
     display: flex;
     flex-direction: column;
-    padding: 2rem 10rem;
+    padding: 2rem 6rem;
     margin-right: 12rem;
 }
 
@@ -452,6 +730,101 @@ font-size: 2rem;
     text-decoration: none;
     color: #666666;
 }
+.footer2 h3{
+    /* background: teal; */
+    font-size: 2rem;   
+    color: #666666;
+    padding: 2rem 15rem;
+    font-weight: lighter;
+    margin-bottom: 5rem;
+}
+
+@media(max-width:425px)
+{
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* background: darkblue; */
+        padding: 0rem 6rem;
+
+    }
+    .part1{
+        /* flex: 3; */
+        width: 100%;
+        /* background: yellow; */
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0rem;
+        /* margin-right: 12rem; */
+    }
+    
+    .part1 h2{
+        font-size: 2.4rem;
+    }
+    
+    .part2{
+        /* flex: 1; */
+    
+        /* background: rgb(0, 255, 85); */
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0rem;
+    
+    }
+    .part3{
+        /* flex: 1; */
+    
+        /* background: rgb(85, 0, 255); */
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0rem;
+        
+    
+    }
+    
+    
+    
+    .part1 img {
+        max-width: 7rem;
+    }
+    .part1 h3{
+        font-size: 2.4rem;
+        margin-top: 6.0rem;
+        font-weight: lighter;
+        color: #666666;
+    }
+
+    .part3 h1{
+        font-size: 2.4rem;
+        
+    }
+    .part2 h1{
+        font-size: 2.4rem;
+    }
+    .part2 a{
+        font-size: 2.4rem;
+    
+        text-decoration: none;
+        color: #666666;
+    }
+    .part3 a{
+        font-size: 2.4rem;
+    
+        text-decoration: none;
+        color: #666666;
+    }
+    .footer2 h3{
+        /* background: teal; */
+        font-size: 2.4rem;   
+        color: #666666;
+        padding: 2rem 6rem;
+        margin-bottom: 7rem;
+        font-weight: lighter;
+        
+    }
+}
+
 
 
 @media(max-width:998px)
