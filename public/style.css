@@ -42,6 +42,26 @@ body {
     font-size: 1.6rem;
     font-weight: bold;
 }
+.navbar .container .menu-logo{
+    display: none;
+}
+
+@media (max-width:540px){
+    .navbar .container ul{
+        display: none;
+    }
+    .navbar .container{
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar .container .menu-logo{
+        display: block;
+    }
+    .navbar .container .navbar-button{
+        display: none;
+    }
+
+}
 
 .navbar ul{
     display: flex;
@@ -275,6 +295,19 @@ ul{
     padding:1.4rem 2rem;
     border-radius: 0.7rem;
     border: none;    
+}
+
+@media (max-width:425px)
+{
+    .gallery-button{
+        width: 100%;
+        font-size: 1.8rem;
+        background: black;
+        color: #ffffff;
+        padding:2.5rem 8rem;
+        border-radius: 1.3rem;
+        border: none;    
+    }
 }
 
 @media (max-width:425px)
